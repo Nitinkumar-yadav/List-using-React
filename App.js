@@ -1,21 +1,14 @@
-import './App.css';
-import { list } from './list';
 
-export default function main() {
-    const listItems = list.map(person =>
-      
-        <div>
-          <p> Name:{person.name}<br/>
-              Age:{person.age}<br/>
-              Profession :{person.job}
-          </p>
-        </div>
-      
-    );
+import Task1 from './Component/Task1';
+import Task2 from './Component/Task2';
+
+function App(){
+
   return(
-    <div className='App-header' >
-    <h1>Employee Detail</h1>
-      <ul>{listItems}</ul>
-     </div>
-  );
-};
+    <div className='App-header'>
+        {/* <Task1/> */}
+        <Task2/>
+    </div>
+  )
+}
+export default App;
